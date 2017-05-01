@@ -8,3 +8,5 @@ CMD /opt/bin/startup.sh
 
 EXPOSE 80 443
 
+VOLUME ["/usr/share/nginx/html", "/var/log/nginx", "/etc/nginx"]
+
