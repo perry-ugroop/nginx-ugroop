@@ -8,5 +8,6 @@ CMD /opt/bin/startup.sh
 
 EXPOSE 80 443
 
+# Expose mount volumes
 VOLUME ["/usr/share/nginx/html", "/var/log/nginx", "/etc/nginx"]
 
