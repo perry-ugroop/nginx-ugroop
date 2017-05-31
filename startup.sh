@@ -12,7 +12,7 @@ cat << EOF > /usr/share/nginx/html/ping.html
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Ping - $HOST</title>
+<title>Ping Yeah - $HOST</title>
 </head>
 <body>
 <p>Hello, Yang and Jay!</p>
