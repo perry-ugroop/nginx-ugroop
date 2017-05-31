@@ -5,15 +5,18 @@ if [[ -d /etc/nginx.default ]] ; then
     rm -fR /etc/nginx.default/
 fi
 
+HOST=`hostname`
+
 cat << EOF > /usr/share/nginx/html/ping.html
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Ping</title>
+<title>Ping - $HOST</title>
 </head>
 <body>
 <p>Hello, Yang and Jay!</p>
+<p>Host: $HOST</p>
 </body>
 </html>
 EOF
