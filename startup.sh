@@ -13,7 +13,7 @@ cat << EOF > /usr/share/nginx/html/ping.html
 <title>Ping</title>
 </head>
 <body>
-<p>Hello, fellas!</p>
+<p>Hello, Yang and Jay!</p>
 </body>
 </html>
 EOF
