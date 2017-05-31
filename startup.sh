@@ -21,6 +21,10 @@ cat << EOF > /usr/share/nginx/html/ping.html
 </html>
 EOF
 
+mkdir -p /usr/share/nginx/html/svc-test
+
+cp /usr/share/nginx/html/ping.html /usr/share/nginx/html/svc-test/
+
 nginx -g 'daemon off;'
 
 
