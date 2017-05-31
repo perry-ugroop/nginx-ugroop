@@ -5,6 +5,19 @@ if [[ -d /etc/nginx.default ]] ; then
     rm -fR /etc/nginx.default/
 fi
 
-echo '<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Ping</title></head><body><p>Hello, fellas!</p></body></html>' > /usr/share/nginx/html/ping.html
+cat << EOF > /usr/share/nginx/html/ping.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Ping</title>
+</head>
+<body>
+<p>Hello, fellas!</p>
+</body>
+</html>
+EOF
+
 nginx -g 'daemon off;'
+
 
